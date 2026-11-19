@@ -1,0 +1,15 @@
+{
+  "title": "Project name",
+  "category": "Machine learning",
+  "phase": "MONTH YEAR",
+  "role": "Your role in the project",
+  "status": "Completed",
+  "featured": false,
+  "description": "Explain the problem, your approach, and the outcome in a few sentences.",
+  "chartLabel": "ILLUSTRATIVE PREVIEW",
+  "visual": "trend",
+  "gallery": [],
+  "tags": ["Python", "SQL", "Machine learning"],
+  "sourceUrl": "",
+  "demoUrl": ""
+}
