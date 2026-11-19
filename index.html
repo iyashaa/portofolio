@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7f6" />
+    <meta name="description" content="Ghiyyas Abiyasha Winardi, final-year Data Science student exploring analytics, machine learning, and data visualization." />
+    <title>Ghiyyas | Portofolio</title>
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="site-header-inner">
+          <button class="mobile-menu-toggle" id="mobile-menu-toggle" type="button" aria-label="Open navigation menu" aria-controls="main-nav" aria-expanded="false">
+            <svg class="mobile-menu-icon mobile-menu-icon-open" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+            <svg class="mobile-menu-icon mobile-menu-icon-close" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" /></svg>
+          </button>
+          <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#journey" id="journey-nav" hidden>Journey</a>
+            <a href="#projects">Projects</a>
+            <a href="#stack">Tech Stack</a>
+            <a href="#contact">Contact</a>
+          </nav>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode" aria-pressed="false">
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 15.6A8.8 8.8 0 0 1 8.4 3.2 8.8 8.8 0 1 0 20.8 15.6Z" /></svg>
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" /><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" /></svg>
+          </button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero section-wrap" id="home">
+          <div class="hero-copy">
+            <h1 id="profile-name">Ghiyyas Abiyasha Winardi</h1>
+            <p class="hero-lead" id="hero-lead">Final-year Data Science student exploring statistical analysis, machine learning, and clear data storytelling.</p>
+            <div class="hero-facts">
+              <div class="hero-fact"><span>ROLE</span><strong id="profile-detail-role">Data Scientist</strong></div>
+              <div class="hero-fact"><span>STATUS</span><strong id="profile-status">Final-year student</strong></div>
+              <div class="hero-fact"><span>FOCUS</span><strong id="profile-focus">Analytics &amp; ML</strong></div>
+            </div>
+            <div class="hero-tags" id="hero-specialties"></div>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">View selected projects <span aria-hidden="true">→</span></a>
+              <a class="button button-outline" id="hero-resume" href="assets/ghiyyas-resume.pdf" download="Ghiyyas-Abiyasha-Winardi-Resume.pdf">Download resume <span aria-hidden="true">↓</span></a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <figure class="portrait-frame" id="profile-photo-frame">
+              <img id="profile-photo" src="" alt="" />
+            </figure>
+          </div>
+        </section>
+
+        <section class="about-section" id="about">
+          <div class="section-wrap about-inner">
+            <div class="about-intro">
+              <h2 id="about-heading">Curiosity first. Evidence always.</h2>
+            </div>
+            <div class="about-content">
+              <div class="about-copy" id="about-copy"></div>
+              <button class="about-toggle" id="about-toggle" type="button" aria-expanded="false" hidden>
+                <span>Show more</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+              </button>
+              <div class="approach-block">
+                <p class="detail-label">A few things I enjoy exploring.</p>
+                <div class="approach-list" id="approach-list"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="journey-section section-wrap" id="journey" hidden>
+          <div class="journey-heading section-heading">
+            <div>
+              <h2>Things I've been <span>working on.</span></h2>
+            </div>
+            <p class="section-aside" id="experience-intro"></p>
+          </div>
+          <div class="journey-list" id="experience-list" aria-live="polite"></div>
+          <section class="education-block" id="education-block" hidden>
+            <h3>Education</h3>
+            <div class="timeline-list" id="education-list"></div>
+          </section>
+        </section>
+
+        <section class="work-section" id="projects">
+          <div class="section-wrap">
+            <div class="section-heading">
+              <div>
+                <h2>A few things <span>I've built.</span></h2>
+              </div>
+              <p class="section-aside" id="projects-intro">Selected work across analytics, machine learning, and applied research.</p>
+            </div>
+            <p class="project-count" id="project-count" aria-live="polite"></p>
+            <div class="project-grid" id="project-grid" aria-live="polite"></div>
+          </div>
+        </section>
+
+        <section class="stack-section" id="stack">
+          <div class="stack-heading section-wrap">
+            <div>
+              <h2>Tools I <span>Work with.</span></h2>
+            </div>
+          </div>
+          <div class="stack-marquee section-wrap" id="stack-groups" role="region" aria-label="Data science technologies"></div>
+        </section>
+
+        <section class="contact-section" id="contact">
+          <div class="section-wrap contact-inner">
+            <div>
+              <h2 id="contact-heading">Get in touch.</h2>
+            </div>
+            <div class="contact-side">
+              <p id="contact-copy">Always happy to connect, exchange ideas, and explore new opportunities.</p>
+              <a class="contact-email" id="contact-email" href="mailto:your.email@example.com">your.email@example.com <span aria-hidden="true">↗</span></a>
+              <div class="social-links" id="social-links" aria-label="Social links"></div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer section-wrap">
+        <span id="footer-name">Ghiyyas Abiyasha Winardi</span>
+        <span>Built with curiosity <span class="footer-star" aria-hidden="true">✳</span></span>
+        <a href="#home">Back to top ↑</a>
+      </footer>
+    </div>
+    <div class="load-error" id="load-error" role="alert" hidden>Content could not be loaded. Run the local server and make sure <code>portfolio.json</code> is available.</div>
+  </body>
+</html>
