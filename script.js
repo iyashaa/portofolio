@@ -508,9 +508,8 @@ function renderPortfolio(data) {
   if (email) setText("#contact-email", `${profile.email} ↗`);
 
   const resumeLink = $("#hero-resume");
-  const resumeUrl = safeProjectUrl(profile.resumeUrl) || safeProjectUrl("assets/ghiyyas-resume.pdf");
-  resumeLink.href = resumeUrl;
-  resumeLink.download = "https://drive.google.com/uc?export=download&id=1Q_APEpfoMWp4x3Tgrkx-KuDjAMpPkSvF";
+  resumeLink.href = "https://drive.google.com/uc?export=download&id=1Q_APEpfoMWp4x3Tgrkx-KuDjAMpPkSvF";
+  resumeLink.download = "Ghiyyas-Abiyasha-Winardi-Resume.pdf";
   resumeLink.hidden = false;
 
   renderProjects(data.projects);
