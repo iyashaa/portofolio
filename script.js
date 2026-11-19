@@ -510,7 +510,7 @@ function renderPortfolio(data) {
   const resumeLink = $("#hero-resume");
   const resumeUrl = safeProjectUrl(profile.resumeUrl) || safeProjectUrl("assets/ghiyyas-resume.pdf");
   resumeLink.href = resumeUrl;
-  resumeLink.download = "https://drive.google.com/uc?export=download&id=1Q_APEpfoMWp4x3Tgrkx-KuDjAMpPkSvF&utm_source=chatgpt.com";
+  resumeLink.download = "https://drive.google.com/uc?export=download&id=1Q_APEpfoMWp4x3Tgrkx-KuDjAMpPkSvF";
   resumeLink.hidden = false;
 
   renderProjects(data.projects);
